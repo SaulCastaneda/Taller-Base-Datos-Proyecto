@@ -279,5 +279,10 @@ namespace Front
             string clave = txtID.Text;
             SelectSuppliers(clave);
         }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

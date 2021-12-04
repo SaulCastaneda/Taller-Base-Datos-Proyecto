@@ -58,6 +58,7 @@ namespace Front
             this.btnGuardar = new System.Windows.Forms.Button();
             this.rbNuevo = new System.Windows.Forms.RadioButton();
             this.rbUpdate = new System.Windows.Forms.RadioButton();
+            this.BtnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvShippers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -327,12 +328,25 @@ namespace Front
             this.rbUpdate.UseVisualStyleBackColor = false;
             this.rbUpdate.CheckedChanged += new System.EventHandler(this.rbUpdate_CheckedChanged);
             // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BtnEliminar.ForeColor = System.Drawing.Color.White;
+            this.BtnEliminar.Location = new System.Drawing.Point(835, 167);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(93, 23);
+            this.BtnEliminar.TabIndex = 53;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
             // Agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1091, 499);
+            this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.rbUpdate);
             this.Controls.Add(this.rbNuevo);
             this.Controls.Add(this.btnGuardar);
@@ -401,5 +415,6 @@ namespace Front
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.RadioButton rbNuevo;
         private System.Windows.Forms.RadioButton rbUpdate;
+        private System.Windows.Forms.Button BtnEliminar;
     }
 }
