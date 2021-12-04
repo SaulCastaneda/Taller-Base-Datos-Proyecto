@@ -29,6 +29,7 @@ namespace Front
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Conexion));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,8 @@ namespace Front
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
@@ -52,6 +55,8 @@ namespace Front
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(12, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
@@ -61,6 +66,8 @@ namespace Front
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 13);
@@ -70,6 +77,8 @@ namespace Front
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(12, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
@@ -78,29 +87,30 @@ namespace Front
             // 
             // txtServidor
             // 
-            this.txtServidor.Location = new System.Drawing.Point(145, 16);
+            this.txtServidor.Location = new System.Drawing.Point(170, 12);
             this.txtServidor.Name = "txtServidor";
             this.txtServidor.Size = new System.Drawing.Size(194, 20);
             this.txtServidor.TabIndex = 4;
             // 
             // txtBD
             // 
-            this.txtBD.Location = new System.Drawing.Point(145, 52);
+            this.txtBD.Location = new System.Drawing.Point(170, 53);
             this.txtBD.Name = "txtBD";
             this.txtBD.Size = new System.Drawing.Size(194, 20);
             this.txtBD.TabIndex = 5;
             this.txtBD.Text = "Northwind";
+            this.txtBD.TextChanged += new System.EventHandler(this.txtBD_TextChanged);
             // 
             // txtIS
             // 
-            this.txtIS.Location = new System.Drawing.Point(145, 91);
+            this.txtIS.Location = new System.Drawing.Point(170, 96);
             this.txtIS.Name = "txtIS";
             this.txtIS.Size = new System.Drawing.Size(194, 20);
             this.txtIS.TabIndex = 6;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(145, 127);
+            this.txtContraseña.Location = new System.Drawing.Point(170, 131);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(194, 20);
@@ -109,19 +119,21 @@ namespace Front
             // 
             // btnConectar
             // 
-            this.btnConectar.Location = new System.Drawing.Point(132, 176);
+            this.btnConectar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnConectar.Location = new System.Drawing.Point(385, 207);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(75, 23);
             this.btnConectar.TabIndex = 8;
             this.btnConectar.Text = "Conectar";
-            this.btnConectar.UseVisualStyleBackColor = true;
+            this.btnConectar.UseVisualStyleBackColor = false;
             this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
             // Conexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 229);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(491, 274);
             this.Controls.Add(this.btnConectar);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtIS);
@@ -131,8 +143,10 @@ namespace Front
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Conexion";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Conexion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

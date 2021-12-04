@@ -15,7 +15,7 @@ namespace Front
 {
     public partial class Conexion : Form
     {
-        public static SqlConnection con;
+        public static SqlConnection con= new SqlConnection();
         public Conexion()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace Front
             String user = txtIS.Text;
             String pass = txtContraseña.Text;
             string cadena = "data source = " + server + "; initial catalog = " + dbName + "; user id = " + user + "; password = " + pass;
-            con = new SqlConnection(cadena);
+           SqlConnection con = new SqlConnection(cadena);
             try
             {
                 con.Open();
@@ -50,6 +50,16 @@ namespace Front
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void txtBD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Conexion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

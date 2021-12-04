@@ -29,6 +29,7 @@ namespace Front
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agregar));
             this.dgvShippers = new System.Windows.Forms.DataGridView();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -78,6 +79,8 @@ namespace Front
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(385, 54);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(24, 13);
@@ -94,6 +97,8 @@ namespace Front
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(713, 109);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 13);
@@ -110,6 +115,8 @@ namespace Front
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(713, 80);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(24, 13);
@@ -126,6 +133,8 @@ namespace Front
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(713, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
@@ -142,6 +151,8 @@ namespace Front
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(381, 107);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 13);
@@ -165,6 +176,8 @@ namespace Front
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(381, 80);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 13);
@@ -174,6 +187,8 @@ namespace Front
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(381, 27);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(45, 13);
@@ -190,6 +205,8 @@ namespace Front
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(37, 109);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 13);
@@ -206,6 +223,8 @@ namespace Front
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(37, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
@@ -238,6 +257,8 @@ namespace Front
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(713, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
@@ -247,6 +268,8 @@ namespace Front
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(37, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 13);
@@ -256,6 +279,8 @@ namespace Front
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(37, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
@@ -264,42 +289,49 @@ namespace Front
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(986, 167);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(93, 23);
             this.btnGuardar.TabIndex = 50;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // rbNuevo
             // 
             this.rbNuevo.AutoSize = true;
+            this.rbNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.rbNuevo.Checked = true;
+            this.rbNuevo.ForeColor = System.Drawing.Color.White;
             this.rbNuevo.Location = new System.Drawing.Point(487, 173);
             this.rbNuevo.Name = "rbNuevo";
             this.rbNuevo.Size = new System.Drawing.Size(57, 17);
             this.rbNuevo.TabIndex = 51;
             this.rbNuevo.TabStop = true;
             this.rbNuevo.Text = "Nuevo";
-            this.rbNuevo.UseVisualStyleBackColor = true;
+            this.rbNuevo.UseVisualStyleBackColor = false;
             this.rbNuevo.CheckedChanged += new System.EventHandler(this.rbNuevo_CheckedChanged);
             // 
             // rbUpdate
             // 
             this.rbUpdate.AutoSize = true;
+            this.rbUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.rbUpdate.ForeColor = System.Drawing.Color.White;
             this.rbUpdate.Location = new System.Drawing.Point(578, 173);
             this.rbUpdate.Name = "rbUpdate";
             this.rbUpdate.Size = new System.Drawing.Size(60, 17);
             this.rbUpdate.TabIndex = 52;
             this.rbUpdate.Text = "Update";
-            this.rbUpdate.UseVisualStyleBackColor = true;
+            this.rbUpdate.UseVisualStyleBackColor = false;
             this.rbUpdate.CheckedChanged += new System.EventHandler(this.rbUpdate_CheckedChanged);
             // 
             // Agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1091, 499);
             this.Controls.Add(this.rbUpdate);
             this.Controls.Add(this.rbNuevo);
@@ -329,6 +361,7 @@ namespace Front
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvShippers);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Agregar";
             this.Text = "Agregar";
             this.Load += new System.EventHandler(this.Agregar_Load);

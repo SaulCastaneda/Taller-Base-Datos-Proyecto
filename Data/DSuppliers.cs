@@ -15,11 +15,12 @@ namespace Data
         public static DataTable ObtenSuppliers()
         {
             SqlDataReader lector = null;
+            SqlConnection conn= new SqlConnection();
             DataTable tabla = new DataTable();
-            SqlConnection conn = null;
+            conn = null;
             try
             {
-                conn = Conexion.CrearConexion();
+                conn= Conexion.CrearConexion();
                 string strComand = "select * from Suppliers";
                 SqlCommand cmd = new SqlCommand(strComand, conn);
                 lector = cmd.ExecuteReader();
@@ -143,7 +144,7 @@ namespace Data
                 select = select + " and HomePage like '%" + home + "%'";
             }
 
-            try
+           try
             {
                 conn = Conexion.CrearConexion();
                 string strComand = select;
@@ -151,7 +152,7 @@ namespace Data
                 lector = cmd.ExecuteReader();
                 tabla.Load(lector);
                 return tabla;
-            }
+           }
             catch (Exception ex)
             {
                 throw ex;

@@ -12,10 +12,7 @@ namespace Negocios
 {
     public class NSuppliers
     {
-        public static DataTable ObtenSuppliersFiltro(string clave, string nombre, string contact, string title, string address, string city, string region, string postal, string country, string phone, string fax, string home)
-        {
-            return DSuppliers.ObtenSuppliersFiltro(clave, nombre, contact, title, address, city, region, postal, country, phone, fax, home);
-        }
+        public static DataTable ObtenSuppliersFiltro(string clave, string nombre, string contact, string title, string address, string city, string region, string postal, string country, string phone, string fax, string home) => DSuppliers.ObtenSuppliersFiltro(clave, nombre, contact, title, address, city, region, postal, country, phone, fax, home);
 
         public static DataTable ObtenSuppliers()
         {
@@ -37,6 +34,7 @@ namespace Negocios
         public static string [] SelectSuppliers(string clave)
         {
             return DSuppliers.SelectSuppliers(clave);
+            
         }
 
     }

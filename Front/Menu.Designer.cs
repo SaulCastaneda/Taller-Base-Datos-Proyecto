@@ -29,37 +29,44 @@ namespace Front
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.btnConsulta = new System.Windows.Forms.Button();
             this.btnCaptura = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(85, 175);
+            this.btnConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnConsulta.ForeColor = System.Drawing.Color.White;
+            this.btnConsulta.Location = new System.Drawing.Point(124, 44);
             this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(75, 23);
+            this.btnConsulta.Size = new System.Drawing.Size(102, 70);
             this.btnConsulta.TabIndex = 0;
-            this.btnConsulta.Text = "Consulta";
-            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Text = "Consultar";
+            this.btnConsulta.UseVisualStyleBackColor = false;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnCaptura
             // 
-            this.btnCaptura.Location = new System.Drawing.Point(179, 175);
+            this.btnCaptura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCaptura.ForeColor = System.Drawing.Color.White;
+            this.btnCaptura.Location = new System.Drawing.Point(124, 148);
             this.btnCaptura.Name = "btnCaptura";
-            this.btnCaptura.Size = new System.Drawing.Size(75, 23);
+            this.btnCaptura.Size = new System.Drawing.Size(102, 83);
             this.btnCaptura.TabIndex = 1;
-            this.btnCaptura.Text = "Captura";
-            this.btnCaptura.UseVisualStyleBackColor = true;
+            this.btnCaptura.Text = "Capturar";
+            this.btnCaptura.UseVisualStyleBackColor = false;
             this.btnCaptura.Click += new System.EventHandler(this.btnCaptura_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 450);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(335, 341);
             this.Controls.Add(this.btnCaptura);
             this.Controls.Add(this.btnConsulta);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);

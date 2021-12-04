@@ -21,6 +21,7 @@ namespace Front
         {
             Consulta c = new Consulta();
             c.ShowDialog();
+            this.btnCaptura.BackColor= Color.FromArgb(229, 9 ,20);
         }
 
         private void btnCaptura_Click(object sender, EventArgs e)
@@ -30,6 +31,11 @@ namespace Front
             Agregar ag = new Agregar();
             ag.ShowDialog();
           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
