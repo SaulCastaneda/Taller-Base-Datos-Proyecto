@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Entidades;
+using System.Windows.Forms;
 
 namespace Data
 {
     public class DSuppliers
     {
+        private static SqlConnection conn;
 
         public static DataTable ObtenSuppliers()
         {
@@ -176,6 +178,7 @@ namespace Data
                 conn = Conexion.CrearConexion();
                 SqlCommand comando = new SqlCommand("Sp_Suppliers", conn);
                 comando.CommandType = CommandType.StoredProcedure;
+                comando.Parameters.Add("@SupplierID", SqlDbType.Int).Value = clave;
                 comando.Parameters.Add("@CompanyName", SqlDbType.VarChar).Value = nombre;
                 comando.Parameters.Add("@ContactName", SqlDbType.VarChar).Value = contact;
                 comando.Parameters.Add("@ContactTitle", SqlDbType.VarChar).Value = title;
@@ -194,6 +197,8 @@ namespace Data
                 comando.Parameters.Add(clave);
                 comando.ExecuteNonQuery();
                 Rpta = Convert.ToString(clave.Value);
+
+
 
             }
             catch (Exception ex)
@@ -215,9 +220,8 @@ namespace Data
             try
             {
                 conn = Conexion.CrearConexion();
-                SqlCommand comando = new SqlCommand("Sp_Suppliers", conn);
+                SqlCommand comando = new SqlCommand("Insert into Suppliers Vales (@SupplierID,@CompanyName,@ContactName,@ContactTitle,@Address,@City,@Region,@PostalCode,@Country,@Phone,@Fax,@Home)", conn);
                 comando.CommandType = CommandType.StoredProcedure;
-                comando.Parameters.Add("@SupplierID", SqlDbType.VarChar).Value = clave;
                 comando.Parameters.Add("@CompanyName", SqlDbType.VarChar).Value = nombre;
                 comando.Parameters.Add("@ContactName", SqlDbType.VarChar).Value = contact;
                 comando.Parameters.Add("@ContactTitle", SqlDbType.VarChar).Value = title;
@@ -244,6 +248,35 @@ namespace Data
             }
             return Rpta;
         }
+        public static void DELETE(String clave) 
+        {
+            conn = Conexion.CrearConexion();
 
+            try
+            {
+                SqlDataReader lector = null;
+                DataTable tabla = new DataTable();
+                SqlConnection conn = null;
+
+                
+                string strComand = "delete * from Suppliers where SupplierID = '" + clave + "'";
+                SqlCommand cmd = new SqlCommand(strComand, conn);
+                string[] sup = new string[12];
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                }
+               
+            }
+          
+            MessageBox.Show("Se Elimino "+clave+ " De la tabla Suppliers");
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -144,6 +145,7 @@ namespace Front
                 
                
             }
+            
             if (rbUpdate.Checked)
             {
                  clave = txtID.Text;
@@ -230,8 +232,10 @@ namespace Front
                     MessageBox.Show("Error al realizar la actualizacion");
                     return;
                 }
-
+               
+            
             }
+            MessageBox.Show("Se Atulizado El registro Correctamente ");
         }
 
         void Limpiar()
@@ -271,6 +275,7 @@ namespace Front
             txtTelefono.Text = suppliers[9];
             txtFax.Text = suppliers[10];
             txtHome.Text = suppliers[11];
+            Limpiar();
             
         }
 

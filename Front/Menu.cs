@@ -37,5 +37,10 @@ namespace Front
         {
 
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
